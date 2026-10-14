@@ -77,26 +77,57 @@ def _size(path):
 
 
 def rule1_metadata(target, input_path):
-    """File size + dimensions. Compression and crops leave size fingerprints."""
-    out = {"rule": 1, "name": "Metadata", "fired": False, "score": 0,
-           "out_of": 30, "note": "Size ratio 0.00", "metric": 0.0}
-    try:
-        src_size = os.path.getsize(target["path"])
-        in_size = os.path.getsize(input_path)
-        src_w, src_h = _size(target["path"]) or (0, 0)
-        in_w, in_h = _size(input_path) or (0, 0)
-        size_ratio = min(src_size, in_size) / max(src_size, in_size)
-        area_kept = (in_w * in_h) / max(1, src_w * src_h)
-        metric = 0.5 * size_ratio + 0.5 * min(1.0, area_kept)
-        out["metric"] = round(max(0.0, min(1.0, metric)), 3)
-        out["note"] = f"Size ratio {out['metric']:.2f}"
-        if out["metric"] >= 0.6:
-            out["fired"] = True
-            out["score"] = int(round(out["out_of"] * out["metric"]))
-    except Exception:
-        pass
-    return out
+    """Compare image dimensions and file signatures."""
+    out = {
+        "rule": 1,
+        "name": "Metadata",
+        "fired": False,
+        "score": 0,
+        "out_of": 30,
+        "note": "Metadata similarity 0.00",
+        "metric": 0.0,
+    }
 
+    try:
+        src_path = target["path"]
+        src_w, src_h = _size(src_path) or (0, 0)
+        in_w, in_h = _size(input_path) or (0, 0)
+
+        if not all((src_w, src_h, in_w, in_h)):
+            return out
+
+        width_ratio = min(src_w, in_w) / max(src_w, in_w)
+        height_ratio = min(src_h, in_h) / max(src_h, in_h)
+        metric = (width_ratio + height_ratio) / 2
+
+        def signature(path):
+            with open(path, "rb") as f:
+                return f.read(8)
+
+        src_sig = signature(src_path)
+        in_sig = signature(input_path)
+
+        src_jpeg = src_sig.startswith(b"\\xff\\xd8\\xff")
+        in_jpeg = in_sig.startswith(b"\\xff\\xd8\\xff")
+        src_png = src_sig.startswith(b"\\x89PNG\\r\\n\\x1a\\n")
+        in_png = in_sig.startswith(b"\\x89PNG\\r\\n\\x1a\\n")
+
+        if (src_jpeg or src_png) and (in_jpeg or in_png):
+            if src_jpeg != in_jpeg:
+                metric -= 0.05
+
+        metric = max(0.0, min(1.0, metric))
+        out["metric"] = round(metric, 3)
+        out["note"] = f"Metadata similarity {metric:.2f}"
+
+        if metric >= 0.5:
+            out["fired"] = True
+            out["score"] = int(round(30 * metric))
+
+    except (OSError, TypeError, ValueError):
+        pass
+
+    return out
 
 def rule2_histogram(target, input_path):
     """Color histogram correlation. Robust to crops and spatial changes."""
@@ -118,29 +149,47 @@ def rule2_histogram(target, input_path):
 
 
 def rule3_template(target, input_path):
-    """Template matching. Detects when the suspect is contained in the original.
-
-    cv2.matchTemplate needs the template (suspect) smaller than the target
-    (original); on rotated/resized suspects this rule degrades fast. Fixing
-    that becomes Rule 4 territory.
-    """
+    """Use ORB local features and geometric verification to detect crops."""
     out = {"rule": 3, "name": "Template", "fired": False, "score": 0,
-           "out_of": 40, "note": "Match score 0.00", "metric": 0.0}
+           "out_of": 40, "note": "ORB matches 0, inliers 0", "metric": 0.0}
+
     try:
         src_g = _gray(target["path"])
-        nd_g = _gray(input_path)
-        if src_g is None or nd_g is None:
+        img_g = _gray(input_path)
+        if src_g is None or img_g is None:
             return out
-        if (src_g.shape[0] < nd_g.shape[0]) or (src_g.shape[1] < nd_g.shape[1]):
-            nd_g = cv2.resize(nd_g, (min(nd_g.shape[1], src_g.shape[1]),
-                                     min(nd_g.shape[0], src_g.shape[0])))
-        res = cv2.matchTemplate(src_g, nd_g, cv2.TM_CCOEFF_NORMED)
-        metric = float(res.max())
-        out["metric"] = round(max(0.0, min(1.0, metric)), 3)
-        out["note"] = f"Match score {out['metric']:.2f}"
-        if out["metric"] >= 0.4:
+
+        orb = cv2.ORB_create(nfeatures=2500)
+        kp1, des1 = orb.detectAndCompute(src_g, None)
+        kp2, des2 = orb.detectAndCompute(img_g, None)
+
+        if des1 is None or des2 is None or len(kp1) < 8 or len(kp2) < 8:
+            return out
+
+        matcher = cv2.BFMatcher(cv2.NORM_HAMMING)
+        pairs = matcher.knnMatch(des1, des2, k=2)
+        good = [m for pair in pairs if len(pair) == 2
+                for m, n in [pair] if m.distance < 0.75 * n.distance]
+
+        if len(good) < 8:
+            out["note"] = f"ORB matches {len(good)}, inliers 0"
+            return out
+
+        src_pts = np.float32([kp1[m.queryIdx].pt for m in good]).reshape(-1, 1, 2)
+        dst_pts = np.float32([kp2[m.trainIdx].pt for m in good]).reshape(-1, 1, 2)
+
+        _, mask = cv2.findHomography(src_pts, dst_pts, cv2.RANSAC, 5.0)
+        inliers = int(mask.sum()) if mask is not None else 0
+
+        metric = min(1.0, inliers / 25.0)
+        out["metric"] = round(metric, 3)
+        out["note"] = f"ORB matches {len(good)}, inliers {inliers}"
+
+        if inliers >= 6 and len(good) >= 12:
             out["fired"] = True
-            out["score"] = int(round(out["out_of"] * out["metric"]))
-    except Exception:
-        pass
+            out["score"] = int(round(40 * metric))
+
+    except Exception as exc:
+        out["note"] = f"ORB error: {type(exc).__name__}"
+
     return out

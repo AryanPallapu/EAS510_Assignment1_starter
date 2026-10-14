@@ -1,0 +1,359 @@
+Processing: original_00__contrast__compress__q55__v5.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.66 -> 20/30 points
+Rule 3 (Template): FIRED - ORB matches 2229, inliers 2221 -> 40/40 points
+Final Score: 90/100 -> MATCH to original_00
+
+Processing: original_00__crop_keep60__resized__q45__v6.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.76 -> 23/30 points
+Rule 3 (Template): FIRED - ORB matches 468, inliers 397 -> 40/40 points
+Final Score: 93/100 -> MATCH to original_00
+
+Processing: original_00__crop_keep70__bright__compress__q40__v2.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.70 -> 21/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.91 -> 27/30 points
+Rule 3 (Template): FIRED - ORB matches 637, inliers 549 -> 40/40 points
+Final Score: 88/100 -> MATCH to original_00
+
+Processing: original_00__crop_offcenter_keep75__compress__q35__v1.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.75 -> 22/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.93 -> 28/30 points
+Rule 3 (Template): FIRED - ORB matches 558, inliers 521 -> 40/40 points
+Final Score: 90/100 -> MATCH to original_00
+
+Processing: original_00__resize_scale114__compress__q45__v3.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.88 -> 26/30 points
+Rule 3 (Template): FIRED - ORB matches 1058, inliers 1039 -> 40/40 points
+Final Score: 96/100 -> MATCH to original_00
+
+Processing: original_00__rotate6deg__compress__q35__v4.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.98 -> 29/30 points
+Rule 3 (Template): FIRED - ORB matches 1456, inliers 1413 -> 40/40 points
+Final Score: 99/100 -> MATCH to original_00
+
+Processing: original_01__contrast__compress__q70__v5.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): NO MATCH - Correlation 0.43 -> 0/30 points
+Rule 3 (Template): FIRED - ORB matches 1333, inliers 1326 -> 40/40 points
+Final Score: 70/100 -> MATCH to original_01
+
+Processing: original_01__crop_keep50__resized__q75__v6.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.93 -> 28/30 points
+Rule 3 (Template): FIRED - ORB matches 187, inliers 136 -> 40/40 points
+Final Score: 98/100 -> MATCH to original_01
+
+Processing: original_01__crop_keep70__bright__compress__q40__v2.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.70 -> 21/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.67 -> 20/30 points
+Rule 3 (Template): FIRED - ORB matches 401, inliers 325 -> 40/40 points
+Final Score: 81/100 -> MATCH to original_01
+
+Processing: original_01__crop_offcenter_keep65__compress__q35__v1.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.65 -> 20/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.99 -> 30/30 points
+Rule 3 (Template): FIRED - ORB matches 268, inliers 208 -> 40/40 points
+Final Score: 90/100 -> MATCH to original_01
+
+Processing: original_01__resize_scale75__compress__q30__v3.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.58 -> 17/30 points
+Rule 3 (Template): FIRED - ORB matches 397, inliers 362 -> 40/40 points
+Final Score: 87/100 -> MATCH to original_01
+
+Processing: original_01__rotate3deg__compress__q65__v4.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.96 -> 29/30 points
+Rule 3 (Template): FIRED - ORB matches 835, inliers 650 -> 40/40 points
+Final Score: 99/100 -> MATCH to original_01
+
+Processing: original_02__contrast__compress__q35__v5.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): NO MATCH - Correlation 0.14 -> 0/30 points
+Rule 3 (Template): FIRED - ORB matches 2167, inliers 2164 -> 40/40 points
+Final Score: 70/100 -> MATCH to original_02
+
+Processing: original_02__crop_keep60__resized__q60__v6.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.97 -> 29/30 points
+Rule 3 (Template): FIRED - ORB matches 189, inliers 165 -> 40/40 points
+Final Score: 99/100 -> MATCH to original_02
+
+Processing: original_02__crop_keep70__bright__compress__q40__v2.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.70 -> 21/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.95 -> 28/30 points
+Rule 3 (Template): FIRED - ORB matches 288, inliers 253 -> 40/40 points
+Final Score: 89/100 -> MATCH to original_02
+
+Processing: original_02__crop_offcenter_keep55__compress__q45__v1.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.55 -> 16/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.94 -> 28/30 points
+Rule 3 (Template): FIRED - ORB matches 70, inliers 56 -> 40/40 points
+Final Score: 84/100 -> MATCH to original_02
+
+Processing: original_02__resize_scale85__compress__q30__v3.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.56 -> 17/30 points
+Rule 3 (Template): FIRED - ORB matches 617, inliers 594 -> 40/40 points
+Final Score: 87/100 -> MATCH to original_02
+
+Processing: original_02__rotate3deg__compress__q35__v4.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.99 -> 30/30 points
+Rule 3 (Template): FIRED - ORB matches 793, inliers 768 -> 40/40 points
+Final Score: 100/100 -> MATCH to original_02
+
+Processing: original_03__contrast__compress__q70__v5.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): NO MATCH - Correlation 0.20 -> 0/30 points
+Rule 3 (Template): FIRED - ORB matches 1844, inliers 1834 -> 40/40 points
+Final Score: 70/100 -> MATCH to original_03
+
+Processing: original_03__crop_keep60__bright__compress__q40__v2.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.60 -> 18/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.97 -> 29/30 points
+Rule 3 (Template): FIRED - ORB matches 316, inliers 283 -> 40/40 points
+Final Score: 87/100 -> MATCH to original_03
+
+Processing: original_03__crop_keep60__resized__q60__v6.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.98 -> 30/30 points
+Rule 3 (Template): FIRED - ORB matches 645, inliers 510 -> 40/40 points
+Final Score: 100/100 -> MATCH to original_03
+
+Processing: original_03__crop_offcenter_keep65__compress__q35__v1.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.65 -> 19/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.95 -> 29/30 points
+Rule 3 (Template): FIRED - ORB matches 415, inliers 360 -> 40/40 points
+Final Score: 88/100 -> MATCH to original_03
+
+Processing: original_03__resize_scale75__compress__q45__v3.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.83 -> 25/30 points
+Rule 3 (Template): FIRED - ORB matches 773, inliers 761 -> 40/40 points
+Final Score: 95/100 -> MATCH to original_03
+
+Processing: original_03__rotate-6deg__compress__q50__v4.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.99 -> 30/30 points
+Rule 3 (Template): FIRED - ORB matches 1437, inliers 1394 -> 40/40 points
+Final Score: 100/100 -> MATCH to original_03
+
+Processing: original_04__contrast__compress__q70__v5.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.85 -> 26/30 points
+Rule 3 (Template): FIRED - ORB matches 1995, inliers 1979 -> 40/40 points
+Final Score: 96/100 -> MATCH to original_04
+
+Processing: original_04__crop_keep50__resized__q45__v6.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.99 -> 30/30 points
+Rule 3 (Template): FIRED - ORB matches 92, inliers 35 -> 40/40 points
+Final Score: 100/100 -> MATCH to original_04
+
+Processing: original_04__crop_keep60__bright__compress__q65__v2.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.60 -> 18/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.96 -> 29/30 points
+Rule 3 (Template): FIRED - ORB matches 165, inliers 77 -> 40/40 points
+Final Score: 87/100 -> MATCH to original_04
+
+Processing: original_04__crop_offcenter_keep75__compress__q35__v1.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.75 -> 22/30 points
+Rule 2 (Histogram): FIRED - Correlation 1.00 -> 30/30 points
+Rule 3 (Template): FIRED - ORB matches 196, inliers 99 -> 40/40 points
+Final Score: 92/100 -> MATCH to original_04
+
+Processing: original_04__resize_scale85__compress__q60__v3.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.99 -> 30/30 points
+Rule 3 (Template): FIRED - ORB matches 391, inliers 298 -> 40/40 points
+Final Score: 100/100 -> MATCH to original_04
+
+Processing: original_04__rotate-4deg__compress__q50__v4.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 1.00 -> 30/30 points
+Rule 3 (Template): FIRED - ORB matches 335, inliers 219 -> 40/40 points
+Final Score: 100/100 -> MATCH to original_04
+
+Processing: original_05__contrast__compress__q35__v5.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): NO MATCH - Correlation 0.09 -> 0/30 points
+Rule 3 (Template): FIRED - ORB matches 2047, inliers 2042 -> 40/40 points
+Final Score: 70/100 -> MATCH to original_05
+
+Processing: original_05__crop_keep50__resized__q60__v6.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.96 -> 29/30 points
+Rule 3 (Template): FIRED - ORB matches 201, inliers 182 -> 40/40 points
+Final Score: 99/100 -> MATCH to original_05
+
+Processing: original_05__crop_keep70__bright__compress__q65__v2.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.70 -> 21/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.85 -> 26/30 points
+Rule 3 (Template): FIRED - ORB matches 596, inliers 580 -> 40/40 points
+Final Score: 87/100 -> MATCH to original_05
+
+Processing: original_05__crop_offcenter_keep75__compress__q25__v1.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.75 -> 22/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.99 -> 30/30 points
+Rule 3 (Template): FIRED - ORB matches 646, inliers 570 -> 40/40 points
+Final Score: 92/100 -> MATCH to original_05
+
+Processing: original_05__resize_scale114__compress__q60__v3.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 1.00 -> 30/30 points
+Rule 3 (Template): FIRED - ORB matches 1045, inliers 827 -> 40/40 points
+Final Score: 100/100 -> MATCH to original_05
+
+Processing: original_05__rotate-3deg__compress__q65__v4.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.99 -> 30/30 points
+Rule 3 (Template): FIRED - ORB matches 1494, inliers 1472 -> 40/40 points
+Final Score: 100/100 -> MATCH to original_05
+
+Processing: original_06__contrast__compress__q35__v5.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.83 -> 25/30 points
+Rule 3 (Template): FIRED - ORB matches 824, inliers 824 -> 40/40 points
+Final Score: 95/100 -> MATCH to original_06
+
+Processing: original_06__crop_keep50__resized__q45__v6.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.98 -> 29/30 points
+Rule 3 (Template): FIRED - ORB matches 58, inliers 37 -> 40/40 points
+Final Score: 99/100 -> MATCH to original_06
+
+Processing: original_06__crop_keep70__bright__compress__q55__v2.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.70 -> 21/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.95 -> 28/30 points
+Rule 3 (Template): FIRED - ORB matches 89, inliers 82 -> 40/40 points
+Final Score: 89/100 -> MATCH to original_06
+
+Processing: original_06__crop_offcenter_keep75__compress__q25__v1.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.75 -> 22/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.98 -> 30/30 points
+Rule 3 (Template): FIRED - ORB matches 177, inliers 160 -> 40/40 points
+Final Score: 92/100 -> MATCH to original_06
+
+Processing: original_06__resize_scale85__compress__q45__v3.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.87 -> 26/30 points
+Rule 3 (Template): FIRED - ORB matches 413, inliers 406 -> 40/40 points
+Final Score: 96/100 -> MATCH to original_06
+
+Processing: original_06__rotate-6deg__compress__q35__v4.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.97 -> 29/30 points
+Rule 3 (Template): FIRED - ORB matches 467, inliers 437 -> 40/40 points
+Final Score: 99/100 -> MATCH to original_06
+
+Processing: original_07__contrast__compress__q70__v5.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.70 -> 21/30 points
+Rule 3 (Template): FIRED - ORB matches 1029, inliers 1014 -> 40/40 points
+Final Score: 91/100 -> MATCH to original_07
+
+Processing: original_07__crop_keep60__bright__compress__q55__v2.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.60 -> 18/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.62 -> 19/30 points
+Rule 3 (Template): FIRED - ORB matches 294, inliers 239 -> 40/40 points
+Final Score: 77/100 -> MATCH to original_07
+
+Processing: original_07__crop_keep60__resized__q60__v6.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.91 -> 27/30 points
+Rule 3 (Template): FIRED - ORB matches 123, inliers 100 -> 40/40 points
+Final Score: 97/100 -> MATCH to original_07
+
+Processing: original_07__crop_offcenter_keep55__compress__q35__v1.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.55 -> 16/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.92 -> 27/30 points
+Rule 3 (Template): FIRED - ORB matches 39, inliers 14 -> 22/40 points
+Final Score: 65/100 -> MATCH to original_07
+
+Processing: original_07__resize_scale114__compress__q45__v3.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.97 -> 29/30 points
+Rule 3 (Template): FIRED - ORB matches 477, inliers 430 -> 40/40 points
+Final Score: 99/100 -> MATCH to original_07
+
+Processing: original_07__rotate-3deg__compress__q65__v4.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.99 -> 30/30 points
+Rule 3 (Template): FIRED - ORB matches 657, inliers 622 -> 40/40 points
+Final Score: 100/100 -> MATCH to original_07
+
+Processing: original_08__contrast__compress__q35__v5.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): NO MATCH - Correlation 0.19 -> 0/30 points
+Rule 3 (Template): FIRED - ORB matches 2171, inliers 2163 -> 40/40 points
+Final Score: 70/100 -> MATCH to original_08
+
+Processing: original_08__crop_keep60__bright__compress__q55__v2.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.60 -> 18/30 points
+Rule 2 (Histogram): NO MATCH - Correlation 0.06 -> 0/30 points
+Rule 3 (Template): FIRED - ORB matches 296, inliers 199 -> 40/40 points
+Final Score: 58/100 -> MATCH to original_08
+
+Processing: original_08__crop_keep60__resized__q45__v6.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.93 -> 28/30 points
+Rule 3 (Template): FIRED - ORB matches 262, inliers 194 -> 40/40 points
+Final Score: 98/100 -> MATCH to original_08
+
+Processing: original_08__crop_offcenter_keep65__compress__q35__v1.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.65 -> 20/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.92 -> 27/30 points
+Rule 3 (Template): FIRED - ORB matches 257, inliers 231 -> 40/40 points
+Final Score: 87/100 -> MATCH to original_08
+
+Processing: original_08__resize_scale114__compress__q30__v3.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.94 -> 28/30 points
+Rule 3 (Template): FIRED - ORB matches 940, inliers 847 -> 40/40 points
+Final Score: 98/100 -> MATCH to original_08
+
+Processing: original_08__rotate3deg__compress__q50__v4.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.99 -> 30/30 points
+Rule 3 (Template): FIRED - ORB matches 1280, inliers 1254 -> 40/40 points
+Final Score: 100/100 -> MATCH to original_08
+
+Processing: original_09__contrast__compress__q35__v5.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.79 -> 24/30 points
+Rule 3 (Template): FIRED - ORB matches 189, inliers 185 -> 40/40 points
+Final Score: 94/100 -> MATCH to original_09
+
+Processing: original_09__crop_keep50__resized__q75__v6.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.67 -> 20/30 points
+Rule 3 (Template): FIRED - ORB matches 16, inliers 8 -> 13/40 points
+Final Score: 63/100 -> MATCH to original_09
+
+Processing: original_09__crop_keep60__bright__compress__q40__v2.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.60 -> 18/30 points
+Rule 2 (Histogram): NO MATCH - Correlation 0.28 -> 0/30 points
+Rule 3 (Template): FIRED - ORB matches 22, inliers 15 -> 24/40 points
+Final Score: 42/100 -> REJECTED
+
+Processing: original_09__crop_offcenter_keep55__compress__q25__v1.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 0.55 -> 16/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.72 -> 22/30 points
+Rule 3 (Template): FIRED - ORB matches 34, inliers 20 -> 32/40 points
+Final Score: 70/100 -> MATCH to original_09
+
+Processing: original_09__resize_scale75__compress__q30__v3.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.57 -> 17/30 points
+Rule 3 (Template): FIRED - ORB matches 85, inliers 73 -> 40/40 points
+Final Score: 87/100 -> MATCH to original_09
+
+Processing: original_09__rotate-3deg__compress__q65__v4.jpg
+Rule 1 (Metadata): FIRED - Metadata similarity 1.00 -> 30/30 points
+Rule 2 (Histogram): FIRED - Correlation 0.99 -> 30/30 points
+Rule 3 (Template): FIRED - ORB matches 119, inliers 95 -> 40/40 points
+Final Score: 100/100 -> MATCH to original_09
