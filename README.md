@@ -85,3 +85,18 @@ restart never touches GitHub.
 ## License
 
 Apache 2.0. See `LICENSE`.
+## Observed weakness in V1: what failed and why
+
+V1 matched 59 out of 60 hard images but rejected `original_09__crop_keep60__bright__compress__q40__v2.jpg`. Its histogram correlation was 0.28, and its final score was 42/100. Cropping, brightness changes, and compression made this image more difficult to match using the existing rules. ORB still found 15 inliers, showing that some visual features remained useful.
+
+## Design decision for V2: what Rule 4 is and why you chose it
+
+I added Rule 4 using Canny edge detection and template matching. It compares edge structures between the original and suspect images. I chose this method because edge structure can provide useful evidence when brightness or color changes affect histogram comparison. The four rules have weights of 25, 25, 40, and 10 points.
+
+## Effect of the change: accuracy before/after on easy vs hard
+
+V1 matched 51 out of 60 modified images and 59 out of 60 hard images. V2 matched 50 out of 60 modified images and 59 out of 60 hard images. Both versions rejected all 15 random images. These results show that V2 maintained strong hard-image performance and rejected random images, but modified-image matches decreased by one.
+
+## Trade-offs: what new costs or risks did Rule 4 introduce
+
+Rule 4 adds computation through edge detection and template matching. Its results can be affected by cropping, resizing, and structural changes. Unrelated images with similar edge patterns could also receive a high score. Its 10-point weight limits its contribution, but the threshold still needs to balance detection against false matches.
